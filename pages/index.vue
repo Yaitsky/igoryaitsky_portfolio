@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLogo />
-    Hello World!
+    Hello World by Igor Yaitsky!
   </div>
 </template>
 

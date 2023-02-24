@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Igor Yaitsky Portfolio - Design & Dev',
+    title: 'Igor Yaitsky - Design & Dev',
     htmlAttrs: {
       lang: 'en'
     },

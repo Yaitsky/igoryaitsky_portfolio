@@ -1,4 +1,9 @@
 export default {
+  server: {
+    port: 8085,
+    host: '0.0.0.0'
+  },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -21,26 +26,54 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/styles/index.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '@/plugins/vue-awesome-swiper', mode: 'client', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    '~/components',
+    { path: '~/components/ui', extensions: ['vue'] }
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/google-fonts'
   ],
+
+  googleFonts: {
+    families: {
+      'Days One': true
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/style-resources',
+    [
+      'nuxt-mq',
+      {
+        defaultBreakpoint: 'mobile',
+        breakpoints: {
+          mobile: 768,
+          tablet: 1200,
+          desktop: Infinity
+        }
+      }
+    ]
   ],
+
+  styleResources: {
+    scss: ['./styles/variables.scss']
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

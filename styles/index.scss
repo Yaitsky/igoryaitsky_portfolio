@@ -1,0 +1,22 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: $bg;
+  font-family: Montserrat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@import './fonts';
+@import './components/index';

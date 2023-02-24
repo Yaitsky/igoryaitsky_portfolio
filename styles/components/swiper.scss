@@ -1,0 +1,25 @@
+.swiper {
+  box-sizing: border-box;
+  height: 100%;
+
+  &-wrapper {
+    align-items: center;
+  }
+
+  &-pagination {
+    position: relative !important;
+    margin-top: 36px;
+  }
+
+  &-pagination-bullets {
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: $caption !important;
+
+      &-active {
+        background-color: $blue !important;
+      }
+    }
+  }
+}

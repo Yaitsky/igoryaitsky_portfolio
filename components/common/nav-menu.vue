@@ -2,7 +2,7 @@
   <nav class="nav-menu">
     <ul class="nav-menu__list">
       <li v-for="link in links" :key="link.id" class="nav-menu__item">
-        <a class="nav-menu__link" :href="`#${link.id}`">
+        <a class="nav-menu__link" :href="`/#${link.id}`">
           <ui-text type="small">
             {{ link.label }}
           </ui-text>

@@ -29,16 +29,24 @@ export default {
   align-items: center;
   gap: 16px;
 
-  @include phones {
+  @include tablets {
     gap: 12px;
+  }
+
+  @include phones {
+    gap: 8px;
   }
 
   &__logo {
     img {
       height: 40px;
 
-      @include phones {
+      @include tablets {
         height: 32px;
+      }
+
+      @include phones {
+        height: 28px;
       }
     }
   }

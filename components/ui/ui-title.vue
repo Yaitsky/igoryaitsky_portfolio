@@ -1,5 +1,5 @@
 <template>
-  <div :class="`ui-title ${color}`">
+  <div :class="`ui-title ${color} ${centered ? 'centered' : ''}`">
     <h1 v-if="type === 'title'">
       <slot />
     </h1>
@@ -24,6 +24,10 @@ export default {
       type: String,
       validator: value => colors.includes(value),
       default: 'text'
+    },
+    centered: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -38,9 +42,14 @@ export default {
     line-height: 64px;
     margin: 0;
 
+    @include tablets {
+      font-size: 40px;
+      line-height: 56px;
+    }
+
     @include phones {
-      font-size: 32px;
-      line-height: 48px;
+      font-size: 28px;
+      line-height: 42px;
     }
   }
 
@@ -50,6 +59,11 @@ export default {
     font-size: 32px;
     line-height: 48px;
     margin: 0;
+
+    @include tablets {
+      font-size: 28px;
+      line-height: 42px;
+    }
 
     @include phones {
       font-size: 24px;
@@ -67,6 +81,10 @@ export default {
 
   span.yellow {
     color: $yellow;
+  }
+
+  &.centered {
+    text-align: center;
   }
 }
 </style>

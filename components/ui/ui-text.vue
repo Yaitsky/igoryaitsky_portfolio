@@ -30,7 +30,7 @@ export default {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 32px;
 
     @include phones {
       font-size: 16px;

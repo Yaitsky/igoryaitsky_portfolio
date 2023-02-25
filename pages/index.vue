@@ -1,78 +1,56 @@
 <template>
-  <div class="app">
-    <ui-loader v-show="loading" />
-    <section v-show="!loading">
-      <ui-container>
-        <ui-logo />
-        <ui-logotype />
-        <div style="margin-top: 24px;">
-          <img src="~/assets/images/avatar.png" width="320">
-        </div>
-        <ui-title type="title">
-          Hello World!
-        </ui-title>
-        <ui-title color="caption">
-          by <span class="yellow">Igor Yaitsky</span>
-        </ui-title>
-        <ui-text> Body Text! </ui-text>
-        <ui-text type="small" color="caption">
-          Small Text!
-        </ui-text>
-        <ui-divider />
-        <ui-divider type="skate" />
-        <ui-divider type="chess" />
-        <ui-icon icon="burger-menu" />
-        <ui-icon icon="angle-left" />
-        <ui-icon icon="arrow-small" />
-        <ui-icon icon="instagram" color="yellow" />
-        <ui-icon icon="vk" color="yellow" />
-        <ui-icon icon="telegram" color="yellow" />
-        <ui-button after-icon="arrow-small">
-          Подробнее
-        </ui-button>
-        <ui-button before-icon="angle-left">
-          На главную
-        </ui-button>
-        <ui-tag>
-          design
-        </ui-tag>
-        <ui-tag type="coral">
-          frontend
-        </ui-tag>
-        <ui-tag type="green">
-          founder
-        </ui-tag>
-        <ui-tag type="light-blue">
-          lead
-        </ui-tag>
-      </ui-container>
-    </section>
+  <div class="main-page">
+    <hello-section />
+
+    <ui-container v-show="!loading" class="app-container">
+      <ui-divider type="skate" />
+
+      <projects-section />
+
+      <ui-divider type="chess" />
+
+      <about-section />
+    </ui-container>
   </div>
 </template>
 
 <script>
+import HelloSection from '@/components/sections/hello-section'
+import ProjectsSection from '@/components/sections/projects-section'
+import AboutSection from '@/components/sections/about-section'
+
 export default {
-  name: 'IndexPage',
-  data () {
-    return {
-      loading: true
-    }
-  },
-  mounted () {
-    window.addEventListener('load', () => {
-      this.loading = false
-    })
+  components: {
+    HelloSection,
+    ProjectsSection,
+    AboutSection
   }
 }
 </script>
 
 <style scoped lang="scss">
-.app {
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
   section {
+    width: 100%;
+  }
+
+  .app-container {
+    flex: 1;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    box-sizing: border-box;
+    gap: 144px;
+    align-items: center;
+    margin-top: 144px;
+
+    @include phones {
+      gap: 96px;
+      margin-top: 96px;
+    }
   }
 }
 </style>

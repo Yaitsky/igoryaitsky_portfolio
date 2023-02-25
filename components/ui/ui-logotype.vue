@@ -15,5 +15,11 @@ export default {
   img {
     height: 32px;
   }
+
+  @include phones {
+    img {
+      height: 24px;
+    }
+  }
 }
 </style>

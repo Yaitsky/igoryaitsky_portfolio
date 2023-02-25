@@ -51,6 +51,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
+    'nuxt-svg-loader',
     [
       'nuxt-mq',
       {
@@ -65,7 +66,7 @@ export default {
   ],
 
   styleResources: {
-    scss: ['./styles/variables.scss']
+    scss: ['./styles/variables.scss', './styles/mixins.scss']
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,4 +1,4 @@
-# portfolio
+# Igor Yaitsky's Design & Dev portfolio 2023
 
 ## Build Setup
 

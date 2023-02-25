@@ -29,15 +29,6 @@ export default {
   flex-direction: column;
   align-items: center;
   background: $bg-gradient;
-
-  h1 {
-    font-family: "Days One";
-    color: $text;
-  }
-
-  h2 {
-    font-family: 'Gotham';
-    color: $caption;
-  }
+  color: $text;
 }
 </style>

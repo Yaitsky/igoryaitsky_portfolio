@@ -45,15 +45,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/stylelint-module'
   ],
-
-  googleFonts: {
-    families: {
-      'Days One': true
-    }
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

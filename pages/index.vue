@@ -16,7 +16,7 @@
 
 <script>
 import HelloSection from '@/components/sections/hello-section'
-import ProjectsSection from '@/components/sections/projects-section'
+import ProjectsSection from '@/components/sections/projects-section/projects-section'
 import AboutSection from '@/components/sections/about-section'
 
 export default {
@@ -48,7 +48,7 @@ export default {
     margin-top: 144px;
 
     @include phones {
-      gap: 96px;
+      gap: 128px;
       margin-top: 96px;
     }
   }

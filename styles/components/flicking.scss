@@ -1,0 +1,16 @@
+.flicking-pagination {
+  bottom: -32px !important;
+
+  @include phones {
+    bottom: -24px !important;
+  }
+
+  &-bullet {
+    background-color: rgba($caption, 0.5) !important;
+    border-radius: 2px !important;
+
+    &-active {
+      background-color: $yellow !important;
+    }
+  }
+}

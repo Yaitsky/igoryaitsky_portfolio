@@ -25,10 +25,10 @@ export default {
 
   .ui-logo {
     img {
-      height: 64px;
+      height: 80px;
 
       @include phones {
-        height: 36px;
+        height: 64px;
       }
     }
   }

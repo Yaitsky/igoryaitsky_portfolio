@@ -1,8 +1,9 @@
 <template>
-  <section class="about-section">
-    <ui-title centered class="about-section__title">
+  <section id="about" class="about-section">
+    <ui-title centered>
       Обо мне
     </ui-title>
+    <ui-divider />
     <div class="about-section__content">
       <div class="about-section__about-text">
         <ui-text v-for="text in aboutText" :key="text" class="about-section__paragraph" color="caption">
@@ -52,23 +53,17 @@ export default {
   flex-direction: column;
   align-items: center;
 
-  &__title {
-    margin-bottom: 64px;
-
-    @include phones {
-      margin-bottom: 48px;
-    }
-  }
-
   &__content {
     max-width: 560px;
     display: flex;
     flex-direction: column;
     gap: 48px;
+    margin-top: 64px;
 
     @include phones {
       max-width: 100%;
       gap: 32px;
+      margin-top: 48px;
     }
   }
 
@@ -87,6 +82,10 @@ export default {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+
+    @include phones {
+      gap: 8px;
+    }
   }
 
   &__social {

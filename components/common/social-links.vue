@@ -30,6 +30,10 @@ export default {
   align-items: center;
   gap: 32px;
 
+  @include phones {
+    gap: 24px;
+  }
+
   .ui-icon svg {
     width: 40px;
     height: 40px;

@@ -3,14 +3,17 @@
     <h1 v-if="type === 'title'">
       <slot />
     </h1>
-    <h2 v-else>
+    <h2 v-else-if="type === 'subtitle'">
       <slot />
     </h2>
+    <h3 v-else>
+      <slot />
+    </h3>
   </div>
 </template>
 
 <script>
-const types = ['title', 'subtitle']
+const types = ['title', 'subtitle', 'section']
 const colors = ['text', 'caption']
 
 export default {
@@ -62,6 +65,24 @@ export default {
 
     @include tablets {
       font-size: 28px;
+      line-height: 42px;
+    }
+
+    @include phones {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0;
+
+    @include tablets {
+      font-size: 24px;
       line-height: 42px;
     }
 

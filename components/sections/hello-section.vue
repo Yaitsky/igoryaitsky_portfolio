@@ -1,5 +1,5 @@
 <template>
-  <section class="hello-section">
+  <section id="hello" class="hello-section">
     <ui-container>
       <page-header />
       <div class="hello-section__content">

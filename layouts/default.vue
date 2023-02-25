@@ -31,7 +31,7 @@ export default {
     margin-top: 144px;
 
     @include phones {
-      margin-top: 96px;
+      margin-top: 128px;
     }
   }
 }

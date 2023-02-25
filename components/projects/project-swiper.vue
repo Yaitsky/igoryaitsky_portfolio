@@ -58,7 +58,8 @@ export default {
   position: relative;
 
   @include phones {
-    width: 320px;
+    width: calc(100vw - 32px);
+    max-width: 400px;
   }
 
   &__image {
@@ -66,7 +67,8 @@ export default {
     pointer-events: none;
 
     @include phones {
-      width: 320px;
+      width: calc(100vw - 32px);
+      max-width: 400px;
     }
   }
 }

@@ -2,7 +2,7 @@
   <div class="main-page">
     <hello-section />
 
-    <ui-container v-show="!loading" class="app-container">
+    <ui-container class="app-container">
       <ui-divider type="skate" />
 
       <projects-section />

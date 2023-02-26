@@ -4,7 +4,7 @@
       <page-header />
       <back-to-main />
 
-      <div class="project-page__container">
+      <div v-if="project" class="project-page__container">
         <div class="project-page__content">
           <project-details :project="project" />
           <project-description :project="project" />
@@ -32,20 +32,20 @@ export default {
     ProjectComments,
     ProjectImages
   },
-  asyncData ({ params, redirect }) {
-    const project = projects.find(p => p.id === params.id)
-
-    if (project) {
-      return {
-        project
-      }
-    } else {
-      redirect('/')
-    }
-  },
   data () {
     return {
+      project: null,
       showImages: false
+    }
+  },
+  created () {
+    const { id } = this.$route.params
+    const project = projects.find(p => p.id === id)
+
+    if (!project) {
+      this.$router.push('/')
+    } else {
+      this.project = project
     }
   },
   mounted () {

@@ -1,7 +1,18 @@
+import projects from './assets/projects/projects.json'
+const dynamicRoutes = () => {
+  return new Promise((resolve) => {
+    resolve(projects.map(p => `projects/${p.id}`))
+  })
+}
+
 export default {
   server: {
     port: 8085,
     host: '0.0.0.0'
+  },
+
+  generate: {
+    routes: dynamicRoutes
   },
 
   // Target: https://go.nuxtjs.dev/config-target

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import projects from '@/static/projects.json'
+import projects from '@/assets/projects.json'
 import ProjectDetails from '@/components/projects/project-details'
 import ProjectDescription from '@/components/projects/project-description'
 import ProjectComments from '@/components/projects/project-comments'

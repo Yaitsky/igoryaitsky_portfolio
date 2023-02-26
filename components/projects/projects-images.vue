@@ -75,7 +75,8 @@ export default {
     border-radius: 8px;
 
     @include phones {
-      height: 300px;
+      height: 240px;
+      max-width: calc(100vh - 32px);
     }
   }
 }

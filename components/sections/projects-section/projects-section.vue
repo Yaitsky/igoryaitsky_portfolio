@@ -10,7 +10,7 @@
 
 <script>
 import ProjectsList from './projects-list'
-import projects from '@/assets/projects.json'
+import projects from '@/assets/projects/projects.json'
 
 export default {
   components: {

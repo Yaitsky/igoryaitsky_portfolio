@@ -1,5 +1,10 @@
 .flicking-pagination {
   bottom: -32px !important;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
 
   @include phones {
     bottom: -24px !important;
@@ -8,6 +13,12 @@
   &-bullet {
     background-color: rgba($caption, 0.5) !important;
     border-radius: 2px !important;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 1rem;
 
     &-active {
       background-color: $yellow !important;

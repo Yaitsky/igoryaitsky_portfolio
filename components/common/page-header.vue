@@ -2,12 +2,18 @@
   <header class="page-header">
     <ui-logotype />
     <nav-menu v-if="$mq !== 'mobile'" />
-    <burger-menu v-else />
+    <ui-icon-button v-else icon="burger-menu" @click="openMenu" />
   </header>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    openMenu () {
+      this.$store.commit('toggleMenu', true)
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

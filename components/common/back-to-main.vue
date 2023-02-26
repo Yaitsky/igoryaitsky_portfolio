@@ -8,7 +8,7 @@
 export default {
   methods: {
     backToMain () {
-      this.$router.push('/')
+      this.$router.back()
     }
   }
 }

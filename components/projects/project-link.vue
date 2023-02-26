@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" class="project-link">
+  <a :href="link" class="project-link" target="_blank">
     <ui-text type="small" color="blue">
       {{ link }}
     </ui-text>

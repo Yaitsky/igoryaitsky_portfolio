@@ -8,6 +8,7 @@
 import BurgerMenu from '@/assets/icons/menu.svg'
 import AngleLeft from '@/assets/icons/angle_left.svg'
 import ArrowSmall from '@/assets/icons/arrow_small.svg'
+import Close from '@/assets/icons/close.svg'
 import Instagram from '@/assets/icons/instagram.svg'
 import Vk from '@/assets/icons/vk.svg'
 import Telegram from '@/assets/icons/telegram.svg'
@@ -16,6 +17,7 @@ const icons = [
   'burger-menu',
   'angle-left',
   'arrow-small',
+  'close',
   'instagram',
   'vk',
   'telegram'
@@ -31,6 +33,7 @@ export default {
     BurgerMenu,
     AngleLeft,
     ArrowSmall,
+    Close,
     Instagram,
     Vk,
     Telegram

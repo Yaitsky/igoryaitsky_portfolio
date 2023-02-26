@@ -1,5 +1,5 @@
 <template>
-  <div class="project-title">
+  <div class="project-title" @click="$emit('click')">
     <div class="project-title__logo">
       <img
         :src="require(`~/assets/projects/logos/${project.id}.png`)"
@@ -28,6 +28,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 16px;
+  cursor: pointer;
 
   @include tablets {
     gap: 12px;

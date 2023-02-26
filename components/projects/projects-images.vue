@@ -73,6 +73,10 @@ export default {
     pointer-events: none;
     border: 1px solid rgba($yellow, 0.75);
     border-radius: 8px;
+
+    @include phones {
+      height: 300px;
+    }
   }
 }
 </style>

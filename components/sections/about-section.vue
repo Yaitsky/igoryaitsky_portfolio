@@ -11,18 +11,7 @@
         </ui-text>
       </div>
 
-      <div class="about-section__contacts">
-        <a href="mailto:yaickiu@gmail.com">
-          <ui-text color="yellow">
-            yaickiu@gmail.com
-          </ui-text>
-        </a>
-        <a href="tel:+7(926)394-95-09">
-          <ui-text color="yellow">
-            +7(926)394-95-09
-          </ui-text>
-        </a>
-      </div>
+      <contact-links />
 
       <social-links class="about-section__social" />
     </div>
@@ -34,7 +23,7 @@ const aboutText = [
   'На протяжении последних семи лет занимаюсь разработкой IT-продуктов.',
   'Бесконечно люблю дизайн во всех его проявлениях, тащусь от визуализации данных.',
   'Закончил МГУ. Работал наставником в онлайн-школах Lofstschool и HTML Академия.',
-  'Ценю красоту во всем, катаюсь на скейте, играю в шахматы, пробую себя в рисовании, люблю горы и море.',
+  'Ценю красоту во всем, катаюсь на скейте, играю в шахматы, пробую рисовать, залипаю на горы и море.',
   'Нравится Figma, VS Code, Vue, Nuxt, Mapbox, Photoshop, Illustrator, Notion и Todoist.'
 ]
 
@@ -74,17 +63,6 @@ export default {
       @include phones {
         margin-top: 8px;
       }
-    }
-  }
-
-  &__contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-
-    @include phones {
-      gap: 8px;
     }
   }
 

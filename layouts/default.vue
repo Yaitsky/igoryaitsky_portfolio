@@ -2,8 +2,9 @@
   <div class="layout">
     <ui-loader v-if="loading" />
 
+    <burger-menu />
+
     <div v-show="!loading" class="layout__content">
-      <!-- <page-header /> -->
       <Nuxt />
       <page-footer class="layout__footer" />
     </div>

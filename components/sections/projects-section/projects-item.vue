@@ -1,7 +1,11 @@
 <template>
   <div class="project-item">
     <div class="project-item__info">
-      <project-title class="project-item__title" :project="project" />
+      <project-title
+        class="project-item__title"
+        :project="project"
+        @click="goToProject"
+      />
       <ui-text color="yellow">
         {{ project.years }}
       </ui-text>
@@ -9,7 +13,11 @@
         {{ project.description_short }}
       </ui-text>
       <project-tags :project="project" />
-      <ui-button class="project-item__button" after-icon="arrow-small" @click="goToProject">
+      <ui-button
+        class="project-item__button"
+        after-icon="arrow-small"
+        @click="goToProject"
+      >
         Подробнее
       </ui-button>
     </div>

@@ -5,6 +5,7 @@
   width: 100%;
   text-align: center;
   z-index: 2;
+  font-size: 0;
 
   @include phones {
     bottom: -24px !important;

@@ -2,7 +2,7 @@
   <nav class="nav-menu">
     <ul class="nav-menu__list">
       <li v-for="link in links" :key="link.id" class="nav-menu__item">
-        <a class="nav-menu__link" :href="`/#${link.id}`" @click.prevent="scrollTo(link.id)">
+        <a class="nav-menu__link" :href="`/#${link.id}`" @click.prevent="goTo(link.id)">
           <ui-text type="small">
             {{ link.label }}
           </ui-text>
@@ -25,14 +25,18 @@ export default {
     }
   },
   methods: {
-    scrollTo (anchorId) {
-      const anchor = document.querySelector(`#${anchorId}`)
+    goTo (anchorId) {
+      if (this.$route.name === 'index') {
+        const anchor = document.querySelector(`#${anchorId}`)
 
-      if (anchor) {
-        window.scrollTo({
-          top: anchor.getBoundingClientRect().top + window.pageYOffset,
-          behavior: 'smooth'
-        })
+        if (anchor) {
+          window.scrollTo({
+            top: anchor.getBoundingClientRect().top + window.pageYOffset,
+            behavior: 'smooth'
+          })
+        }
+      } else {
+        this.$router.push(`/#${anchorId}`)
       }
     }
   }

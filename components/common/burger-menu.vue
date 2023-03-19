@@ -1,6 +1,6 @@
 <template>
-  <transition name="menu">
-    <div v-if="$mq === 'mobile' && showMenu" class="burger-menu">
+  <transition name="fade">
+    <div v-if="showMenu" class="burger-menu">
       <div class="burger-menu__header">
         <ui-logotype />
         <ui-icon-button icon="close" @click="closeMenu" />
@@ -79,13 +79,13 @@ export default {
   }
 }
 
-.menu-enter-active,
-.menu-leave-active {
-  transition: opacity 0.3s ease-out;
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
-.menu-enter-from,
-.menu-leave-to {
-  opacity: 0;
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease-in-out;
 }
 </style>

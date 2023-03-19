@@ -2,7 +2,7 @@
   <div class="layout">
     <ui-loader v-if="loading" />
 
-    <burger-menu />
+    <burger-menu v-if="$mq === 'mobile'" />
 
     <div v-show="!loading" class="layout__content">
       <Nuxt />

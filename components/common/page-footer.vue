@@ -1,6 +1,6 @@
 <template>
   <footer class="page-footer">
-    <ui-text type="small" class="designed-by">
+    <ui-text type="small" class="page-footer__created-by">
       Created by Igor Yaitsky
     </ui-text>
     <ui-text type="small" color="caption">
@@ -28,7 +28,7 @@ export default {
     padding: 16px 0;
   }
 
-  .designed-by {
+  &__created-by {
     margin-bottom: 8px;
   }
 }

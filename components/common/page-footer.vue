@@ -1,7 +1,7 @@
 <template>
   <footer class="page-footer">
     <ui-text type="small" class="designed-by">
-      Designed by Igor Yaitsky
+      Created by Igor Yaitsky
     </ui-text>
     <ui-text type="small" color="caption">
       2023

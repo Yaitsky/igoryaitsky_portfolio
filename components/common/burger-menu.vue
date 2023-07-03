@@ -6,13 +6,15 @@
         <ui-icon-button icon="close" @click="closeMenu" />
       </div>
 
-      <div class="burger-menu__nav" @click="closeMenu">
-        <nav-menu />
-      </div>
+      <div class="burger-menu__container">
+        <div class="burger-menu__nav" @click="closeMenu">
+          <nav-menu />
+        </div>
 
-      <div class="burger-menu__contacts">
-        <contact-links />
-        <social-links />
+        <div class="burger-menu__contacts">
+          <contact-links />
+          <social-links />
+        </div>
       </div>
     </div>
   </transition>
@@ -25,17 +27,9 @@ export default {
       return this.$store.state.showMenu
     }
   },
-  mounted () {
-    window.addEventListener('click', this.outsideClickHandler)
-  },
   methods: {
     closeMenu () {
       this.$store.commit('toggleMenu', false)
-    },
-    outsideClickHandler (e) {
-      if (!this.$el.contains(e.target)) {
-        this.closeMenu()
-      }
     }
   }
 }
@@ -44,7 +38,7 @@ export default {
 <style lang="scss">
 .burger-menu {
   background: $dark;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -52,11 +46,20 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  box-shadow: 0px 0px 96px 64px rgba($dark, 0.75);
+  box-shadow: 0px 0px 64px 48px rgba($dark, 0.75);
+  z-index: 100;
+  border-bottom: 1px solid $bg;
 
   &__header {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__container {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 
   &__nav {

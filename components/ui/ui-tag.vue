@@ -7,7 +7,7 @@
 </template>
 
 <script>
-const types = ['yellow', 'green', 'light-blue', 'coral']
+const types = ['yellow', 'green', 'light-blue', 'coral', 'gray']
 
 export default {
   props: {
@@ -45,6 +45,10 @@ export default {
 
   &.coral {
     border-color: $coral;
+  }
+
+  &.gray {
+    border-color: $gray;
   }
 }
 </style>

@@ -24,7 +24,7 @@ const aboutText = [
   'Бесконечно люблю дизайн во всех его проявлениях, тащусь от визуализации данных.',
   'Закончил МГУ. Работал наставником в онлайн-школах Lofstschool и HTML Академия.',
   'Ценю красоту во всем, катаюсь на скейте, играю в шахматы, пробую рисовать, залипаю на горы и море.',
-  'Нравится Figma, VS Code, Vue, Nuxt, Mapbox, Photoshop, Illustrator, Notion и Todoist.'
+  'Нравится Figma, VS Code, Vue, Nuxt, Mapbox, Illustrator, Notion, Google Docs и Todoist.'
 ]
 
 export default {

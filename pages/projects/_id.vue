@@ -8,6 +8,7 @@
         <div class="project-page__content">
           <project-details :project="project" />
           <project-description :project="project" />
+          <project-instruments :project="project" />
           <project-comments :project="project" />
           <project-images v-show="showImages" :project="project" />
         </div>
@@ -23,6 +24,7 @@ import projects from '@/assets/projects/projects.json'
 import ProjectDetails from '@/components/projects/project-details'
 import ProjectDescription from '@/components/projects/project-description'
 import ProjectComments from '@/components/projects/project-comments'
+import ProjectInstruments from '@/components/projects/project-instruments'
 import ProjectImages from '@/components/projects/projects-images'
 
 export default {
@@ -30,6 +32,7 @@ export default {
     ProjectDetails,
     ProjectDescription,
     ProjectComments,
+    ProjectInstruments,
     ProjectImages
   },
   data () {
@@ -51,7 +54,7 @@ export default {
   mounted () {
     setTimeout(() => {
       this.showImages = true
-    }, 1000)
+    }, 2000)
   }
 }
 </script>

@@ -29,7 +29,8 @@
     "images": [
       "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
     ],
-    "main_image": "1"
+    "main_image": "1",
+    "instruments": ["Figma", "Illustrator", "VS Code", "Vue", "Nuxt", "Mapbox", "Google Docs", "Notion"]
   },
   {
     "id": "ritm",
@@ -61,7 +62,8 @@
     "images": [
       "1", "2", "3", "4", "5", "6"
     ],
-    "main_image": "1"
+    "main_image": "1",
+    "instruments": ["VS Code", "Vue", "Mapbox", "Google Docs", "Jira", "Redmine"]
   },
   {
     "id": "spotty",
@@ -91,7 +93,8 @@
     "images": [
       "1", "2", "3", "4", "5", "6", "7", "8"
     ],
-    "main_image": "3"
+    "main_image": "3",
+    "instruments": ["Sketch", "VS Code", "Vue", "Nuxt", "Mapbox", "Google Docs"]
   },
   {
     "id": "gee",
@@ -118,7 +121,8 @@
     "images": [
       "1", "2", "3", "4"
     ],
-    "main_image": "1"
+    "main_image": "1",
+    "instruments": ["VS Code", "Vue", "Nuxt"]
   },
   {
     "id": "offers",
@@ -149,7 +153,8 @@
     "images": [
       "1", "2", "3", "4", "5", "6"
     ],
-    "main_image": "1"
+    "main_image": "1",
+    "instruments": ["Sketch", "VS Code", "Vue", "Google Docs", "Trello"]
   },
   {
     "id": "routitude",
@@ -178,6 +183,7 @@
     "images": [
       "1", "2", "3", "4", "5", "6", "7", "8", "9"
     ],
-    "main_image": "3"
+    "main_image": "3",
+    "instruments": ["Sketch", "VS Code", "Vue", "Nuxt", "Mapbox", "Notion", "Jira"]
   }
 ]

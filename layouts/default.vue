@@ -28,6 +28,8 @@ export default {
 
 <style lang="scss">
 .layout {
+  background-color: $bg;
+
   &__footer {
     margin-top: 144px;
 

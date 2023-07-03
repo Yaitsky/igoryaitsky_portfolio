@@ -1,5 +1,5 @@
 <template>
-  <div class="main-page">
+  <div class="main-page" @click="closeBurgerMenu">
     <hello-section />
 
     <ui-container class="app-container">
@@ -24,6 +24,13 @@ export default {
     HelloSection,
     ProjectsSection,
     AboutSection
+  },
+  methods: {
+    closeBurgerMenu () {
+      if (this.$store.state.showMenu) {
+        this.$store.commit('toggleMenu', false)
+      }
+    }
   }
 }
 </script>

@@ -6,7 +6,7 @@
 
 <script>
 const types = ['body', 'small']
-const colors = ['text', 'caption', 'yellow', 'green', 'blue', 'light-blue', 'coral']
+const colors = ['text', 'caption', 'yellow', 'green', 'blue', 'light-blue', 'coral', 'gray']
 
 export default {
   props: {
@@ -76,6 +76,10 @@ export default {
 
   &.coral {
     color: $coral;
+  }
+
+  &.gray {
+    color: $gray;
   }
 }
 </style>

@@ -4,7 +4,7 @@
 
     <burger-menu v-if="$mq === 'mobile'" />
 
-    <div v-show="!loading" class="layout__content">
+    <div v-show="!loading" class="layout__content" @click="closeBurgerMenu">
       <Nuxt />
       <page-footer class="layout__footer" />
     </div>
@@ -22,6 +22,13 @@ export default {
     window.addEventListener('load', () => {
       this.loading = false
     })
+  },
+  methods: {
+    closeBurgerMenu () {
+      if (this.$store.state.showMenu) {
+        this.$store.commit('toggleMenu', false)
+      }
+    }
   }
 }
 </script>

@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2022-07-19",
+    "file": "2022-07-19.jpeg",
+    "thumb": "2022-07-19_thumb.jpg",
+    "type": "gouache"
+  },
+  {
+    "date": "2022-07-21",
+    "file": "2022-07-21.jpeg",
+    "thumb": "2022-07-21_thumb.jpg",
+    "type": "pastel"
+  },
+  {
+    "date": "2022-07-22",
+    "file": "2022-07-22.jpeg",
+    "thumb": "2022-07-22_thumb.jpg",
+    "type": "pastel"
+  },
+  {
+    "date": "2022-07-25",
+    "file": "2022-07-25.jpeg",
+    "thumb": "2022-07-25_thumb.jpg",
+    "type": "pastel"
+  },
+  {
+    "date": "2022-08-04",
+    "file": "2022-08-04.jpeg",
+    "thumb": "2022-08-04_thumb.jpg",
+    "type": "pastel"
+  },
+  {
+    "date": "2022-08-11",
+    "file": "2022-08-11.jpeg",
+    "thumb": "2022-08-11_thumb.jpg",
+    "type": "pastel"
+  }
+]

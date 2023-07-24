@@ -8,6 +8,8 @@
       <Nuxt />
       <page-footer class="layout__footer" />
     </div>
+
+    <portal-target name="portal" />
   </div>
 </template>
 

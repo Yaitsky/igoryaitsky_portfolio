@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Adobe Illustrator",
+    "author": "Дмитрий Фокеев",
+    "subject": "design",
+    "url": "https://stepik.org/course/106825/promo",
+    "language": "ru",
+    "rating": 5
+  },
+  {
+    "title": "David Carson Teaches Graphic Design",
+    "author": "MasterClass, David Carson",
+    "subject": "design",
+    "url": "https://www.masterclass.com/classes/david-carson-teaches-graphic-design",
+    "language": "en",
+    "rating": 5
+  },
+  {
+    "title": "Game Design: Art and Concepts Specialization",
+    "author": "California Institute of the Arts",
+    "subject": "gamedev",
+    "url": "https://www.coursera.org/specializations/game-design",
+    "language": "en",
+    "rating": 4
+  },
+  {
+    "title": "Complete Unity Game Developer 2D",
+    "author": "GameDev.tv",
+    "subject": "gamedev",
+    "url": "https://www.udemy.com/course/unitycourse/",
+    "language": "en",
+    "rating": 5
+  },
+  {
+    "title": "Геймдизайн. Как делать игры, которые нравятся и приносят деньги",
+    "author": "Edvice",
+    "subject": "gamedev",
+    "url": "https://edvice.pro/online-course/game-design/",
+    "language": "ru",
+    "rating": 4
+  },
+  {
+    "title": "Intro Game Designer XYZ",
+    "author": "XYZ School",
+    "subject": "gamedev",
+    "url": "https://learn.school-xyz.com/ru/courses/IntroGameDesign/",
+    "language": "ru",
+    "rating": 4
+  },
+  {
+    "title": "Введение в игровую индустрию XYZ",
+    "author": "XYZ School",
+    "subject": "gamedev",
+    "url": "https://learn.school-xyz.com/ru/courses/intro-v-gamedev/",
+    "language": "ru",
+    "rating": 4
+  },
+  {
+    "title": "Gamification",
+    "author": "Penn. University of Pensilvania",
+    "subject": "design",
+    "url": "https://www.coursera.org/learn/gamification",
+    "language": "en",
+    "rating": 5
+  },
+  {
+    "title": "Основы пастельной живописи",
+    "author": "Художник Онлайн",
+    "subject": "drawing",
+    "url": "https://www.hudozhnik.online/pastel",
+    "language": "ru",
+    "rating": 4
+  },
+  {
+    "title": "Graphic Design Specialization",
+    "author": "California Institute of the Arts",
+    "subject": "design",
+    "url": "https://www.coursera.org/specializations/graphic-design",
+    "language": "en",
+    "rating": 5
+  },
+  {
+    "title": "Google UX Design Professional Certificate",
+    "author": "Google",
+    "subject": "design",
+    "url": "https://www.coursera.org/professional-certificates/google-ux-design",
+    "language": "en",
+    "rating": 5
+  },
+  {
+    "title": "Курс Viral Marketing and How to Craft Contagious Content",
+    "author": "Wharton. University of Pensilvania",
+    "subject": "marketing",
+    "url": "https://www.coursera.org/learn/wharton-contagious-viral-marketing/home/welcome",
+    "language": "en",
+    "rating": 5
+  }
+]

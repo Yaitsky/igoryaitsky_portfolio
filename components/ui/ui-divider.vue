@@ -5,7 +5,7 @@
 </template>
 
 <script>
-const types = ['line', 'skate', 'chess']
+const types = ['line', 'skate', 'chess', 'brush']
 
 export default {
   props: {
@@ -26,6 +26,17 @@ export default {
     }
   }
 
+  &--brush {
+    img {
+      height: 32px;
+      opacity: 0.8;
+
+      @include phones {
+        height: 20px;
+      }
+    }
+  }
+
   &--skate,
   &--chess {
     img {
@@ -35,6 +46,10 @@ export default {
         height: 36px;
       }
     }
+  }
+
+  &--brush {
+    animation: brush 2s ease-in-out 0s infinite reverse backwards;
   }
 
   &--skate {
@@ -97,6 +112,34 @@ export default {
 
   100% {
     transform: translate(0);
+  }
+}
+
+@keyframes brush {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateY(-12px) rotate(-3.5deg);
+  }
+
+  30% {
+    transform: translateY(10px) rotate(3.5deg);
+  }
+
+  45% {
+    transform: translateY(-10px) rotate(-3deg);
+  }
+
+  60% {
+    transform: translateY(7px) rotate(2deg);
+  }
+
+  75% {
+    transform: translateY(-4px) rotate(-1.2deg);
   }
 }
 </style>

@@ -2,7 +2,7 @@
   <ul class="social-links">
     <li v-for="link in links" :key="link.id" class="social-links__item">
       <a :href="link.url" target="_blank">
-        <ui-icon :icon="link.id" color="yellow" />
+        <ui-icon :icon="link.id" color="caption" />
       </a>
     </li>
   </ul>

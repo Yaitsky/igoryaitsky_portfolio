@@ -81,5 +81,13 @@ export default {
   &.gray {
     color: $gray;
   }
+
+  span.yellow {
+    color: $yellow;
+  }
+
+  span.caption {
+    color: $caption;
+  }
 }
 </style>

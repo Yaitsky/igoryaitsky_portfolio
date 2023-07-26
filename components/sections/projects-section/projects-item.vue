@@ -9,7 +9,7 @@
       <ui-text color="yellow">
         {{ project.years }}
       </ui-text>
-      <ui-text class="project-item__description" color="caption">
+      <ui-text class="project-item__description">
         {{ project.description_short }}
       </ui-text>
       <project-tags :project="project" />

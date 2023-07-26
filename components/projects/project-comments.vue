@@ -7,7 +7,7 @@
     <ul class="project-comments__list">
       <li v-for="comment in project.comments" :key="comment" class="project-comments__item">
         <div class="project-comments__dot" />
-        <ui-text color="caption">
+        <ui-text>
           {{ comment }}
         </ui-text>
       </li>

@@ -6,7 +6,7 @@
     <ui-divider />
     <div class="about-section__content">
       <div class="about-section__about-text">
-        <ui-text v-for="text in aboutText" :key="text" class="about-section__paragraph" color="caption">
+        <ui-text v-for="text in aboutText" :key="text" class="about-section__paragraph">
           {{ text }}
         </ui-text>
       </div>

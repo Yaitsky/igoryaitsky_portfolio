@@ -55,7 +55,7 @@ export default {
   align-items: center;
   flex-direction: column;
   gap: 64px;
-  max-width: 720px;
+  max-width: 740px;
 
   &__title {
     display: flex;

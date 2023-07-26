@@ -9,7 +9,6 @@
         v-for="text in project.description_full"
         :key="text"
         class="project-description__text"
-        color="caption"
       >
         {{ text }}
       </ui-text>

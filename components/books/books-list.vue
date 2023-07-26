@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     getRatingLabel (rating) {
-      return new Array(rating).fill('🔥').join('').trim()
+      return new Array(rating).fill('🔸').join('').trim()
     }
   }
 }
@@ -70,13 +70,29 @@ export default {
       gap: 16px;
     }
 
+    &-index {
+      width: 32px;
+    }
+
+    &-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      flex: 1;
+
+      @include phones {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+    }
+
     &-rating {
-      opacity: 0.7;
-      font-size: 0;
+      opacity: 0.75;
 
       span.grayscale {
-        filter: grayscale(1);
-        // opacity: 0.7;
+        filter: grayscale(1) invert(3%) sepia(1%) saturate(513%) hue-rotate(314deg) brightness(75%) contrast(80%);
       }
     }
   }

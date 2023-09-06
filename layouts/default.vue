@@ -21,9 +21,9 @@ export default {
     }
   },
   mounted () {
-    window.addEventListener('load', () => {
+    setTimeout(() => {
       this.loading = false
-    })
+    }, 800)
   },
   methods: {
     closeBurgerMenu () {

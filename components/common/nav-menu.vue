@@ -15,7 +15,7 @@
 <script>
 const links = [
   { id: 'projects', label: 'Проекты' },
-  { id: 'illustrations', label: 'Рисунки' },
+  // { id: 'illustrations', label: 'Рисунки' },
   { id: 'about', label: 'Обо мне' }
 ]
 

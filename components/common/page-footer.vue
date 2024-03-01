@@ -4,7 +4,7 @@
       Created by Igor Yaitsky
     </ui-text>
     <ui-text type="small" color="caption">
-      2023
+      2024
     </ui-text>
   </footer>
 </template>

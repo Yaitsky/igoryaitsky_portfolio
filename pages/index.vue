@@ -7,9 +7,9 @@
 
       <projects-section />
 
-      <ui-divider type="brush" />
+      <!-- <ui-divider type="brush" />
 
-      <illustrations-section />
+      <illustrations-section /> -->
 
       <ui-divider type="chess" />
 
@@ -25,7 +25,7 @@
 <script>
 import HelloSection from '@/components/sections/hello-section'
 import ProjectsSection from '@/components/sections/projects-section/projects-section'
-import IllustrationsSection from '@/components/sections/illustrations-section'
+// import IllustrationsSection from '@/components/sections/illustrations-section'
 import AboutSection from '@/components/sections/about-section'
 import BooksSection from '@/components/sections/books-section'
 
@@ -33,7 +33,7 @@ export default {
   components: {
     HelloSection,
     ProjectsSection,
-    IllustrationsSection,
+    // IllustrationsSection,
     AboutSection,
     BooksSection
   }
